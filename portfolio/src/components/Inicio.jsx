@@ -1,18 +1,14 @@
 import React from "react";
-import { motion } from "framer-motion";
 import foto from "../assets/perfil.jpg";
+import technologies from "../assets/technologies";
 
-const technologies = [
-  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
-];
 
 const Inicio = () => {
+
+  const carrouselTech = [...technologies, ...technologies];
+  
   return (
-    <section className="flex flex-col items-center text-center md:text-left max-w-screen-lg mx-auto py-20 px-8">
+    <section className="flex flex-col items-center text-center md:text-left max-w-screen-lg mx-auto py-20 px-8 2xl:max-w-screen-xl">
       {/* Contenedor de texto e imagen */}
       <div className="flex flex-col md:flex-row items-center justify-between w-full">
         {/* Texto */}
@@ -26,27 +22,24 @@ const Inicio = () => {
         </div>
 
         {/* Imagen */}
-        <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
+        <div className="md:w-1/2 flex justify-center mt-8 md:mt-0 3xl:">
           <img
             src={foto}
             alt="Facundo Morales"
-            className="w-64 h-64 object-cover rounded-full border-4 border-gray-300 shadow-lg"
+            className="w-84 h-84 object-cover rounded-full border-4 border-gray-300 shadow-lg 2xl:w-110 2xl:h-110"
           />
         </div>
       </div>
 
-      {/* Carrusel de tecnologías - ahora está debajo */}
+      {/* Carrusel de tecnologías */}
       <div className="w-full mt-12 overflow-hidden border-t pt-6">
-        <motion.div
-          className="flex space-x-12"
-          animate={{ x: ["0%", "-100%"] }}
-          transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
-          style={{ width: "max-content" }}
-        >
-          {[...technologies, ...technologies].map((tech, index) => (
-            <img key={index} src={tech} alt="tech" className="h-12" />
-          ))}
-        </motion.div>
+        <div className="overflow-hidden w-full relative">
+          <div className="flex whitespace-nowrap animate-scroll w-max">
+            {[...technologies, ...technologies].map((tech, index) => (
+              <img key={index} src={tech} alt="tech" className="h-15 mx-[50px] w-40" />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
