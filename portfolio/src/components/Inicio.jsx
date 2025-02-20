@@ -4,9 +4,6 @@ import technologies from "../assets/technologies";
 
 
 const Inicio = () => {
-
-  const carrouselTech = [...technologies, ...technologies];
-  
   return (
     <section className="flex flex-col items-center text-center md:text-left max-w-screen-lg mx-auto py-20 px-8 2xl:max-w-screen-xl">
       {/* Contenedor de texto e imagen */}
@@ -32,15 +29,16 @@ const Inicio = () => {
       </div>
 
       {/* Carrusel de tecnologías */}
-      <div className="w-full mt-12 overflow-hidden border-t pt-6">
+      <div className="w-full mt-12 overflow-hidden border-t pt-6 fade-mask">
         <div className="overflow-hidden w-full relative">
           <div className="flex whitespace-nowrap animate-scroll w-max">
             {[...technologies, ...technologies].map((tech, index) => (
-              <img key={index} src={tech} alt="tech" className="h-15 mx-[50px] w-40" />
+              <img key={index} src={tech} alt="tech" className="h-22 mx-[50px] w-40" />
             ))}
           </div>
         </div>
       </div>
+
     </section>
   );
 };
