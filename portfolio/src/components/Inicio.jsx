@@ -1,7 +1,7 @@
 import React from "react";
 import foto from "../assets/perfil.jpg";
 import technologies from "../assets/technologies";
-
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Inicio = () => {
   return (
@@ -10,12 +10,31 @@ const Inicio = () => {
       <div className="flex flex-col md:flex-row items-center justify-between w-full">
         {/* Texto */}
         <div className="md:w-1/2">
-          <h1 className="text-5xl font-bold">Facundo Morales</h1>
-          <h2 className="text-2xl text-gray-700 mt-2">Full Stack Developer</h2>
+          <h2 className="text-2xl text-gray-700">¡Un gusto que estés aquí! 🙌</h2>
+          <h1 className="text-5xl font-bold mt-6">Facundo Morales</h1>
+          <h2 className="text-2xl text-gray-700 mt-2">Full Stack Web Developer</h2>
           <p className="mt-4 text-gray-600">
             Desarrollador apasionado por la creación de aplicaciones web modernas,
             optimizadas y escalables.
           </p>
+          <div className="flex gap-4 mt-6">
+            <a
+              href="https://www.instagram.com/facu_morales14/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 flex items-center justify-center rounded-full border hover:bg-[#1CEDAE] transition duration-600"
+            >
+              <FaInstagram className="text-black text-lg" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/facundo-samuel-morales-villagra-801656298/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 flex items-center justify-center rounded-full border hover:bg-[#1CEDAE] transition duration-600"
+            >
+              <FaLinkedinIn className="text-black text-lg" />
+            </a>
+          </div>
         </div>
 
         {/* Imagen */}
@@ -23,7 +42,7 @@ const Inicio = () => {
           <img
             src={foto}
             alt="Facundo Morales"
-            className="w-84 h-84 object-cover rounded-full border-4 border-gray-300 shadow-lg 2xl:w-110 2xl:h-110"
+            className="w-84 h-84 object-cover rounded-full border-4 border-gray-300 shadow-lg 2xl:w-100 2xl:h-100"
           />
         </div>
       </div>
