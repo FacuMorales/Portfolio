@@ -14,10 +14,10 @@ const Header = () => {
         </div>
 
         {/* Enlaces */}
-        <nav className="md:flex space-x-6 ml-[120px] font-semibold">
-          <a href="#projects" className="text-gray-700 hover:text-black">Proyectos</a>
-          <a href="#about" className="text-gray-700 hover:text-black">Sobre mí</a>
-          <a href="#experience" className="text-gray-700 hover:text-black">Experiencia</a>
+        <nav className="md:flex space-x-8 ml-[120px] font-semibold">
+          <a href="#projects" className="text-gray-700 hover:text-[#1ad69d] transition duration-200">Proyectos</a>
+          <a href="#about" className="text-gray-700 hover:text-[#1ad69d] transition duration-200">Sobre mí</a>
+          <a href="#experience" className="text-gray-700 hover:text-[#1ad69d] transition duration-200">Experiencia</a>
         </nav>
 
         {/* Botones */}
