@@ -48,7 +48,7 @@ const Inicio = () => {
       </div>
 
       {/* Carrusel de tecnologías */}
-      <div className="w-full mt-12 overflow-hidden border-t pt-6 fade-mask">
+      <div className="w-full mt-12 overflow-hidden border-t border-gray-400 pt-6 fade-mask">
         <div className="overflow-hidden w-full relative">
           <div className="flex whitespace-nowrap animate-scroll w-max">
             {[...technologies, ...technologies].map((tech, index) => (

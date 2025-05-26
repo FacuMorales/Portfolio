@@ -1,5 +1,6 @@
 import React from "react";
 import henry from "../assets/henry.png"
+import { FiExternalLink } from "react-icons/fi";
 
 const About = () => {
     return(
@@ -43,11 +44,18 @@ const About = () => {
                 rel="noopener noreferrer"
                 className="flex-shrink-0"
                 >
-                <img
-                    src={henry}
-                    alt="Certificado Henry"
-                    className="w-full h-40 object-cover rounded-xl shadow-sm transition-transform duration-300 ease-in-out group-hover:scale-105"
-                />
+                <div className="relative w-full md:w-60 h-40">
+                    <img
+                        src={henry}
+                        alt="Certificado Henry"
+                        className="w-full h-full object-cover rounded-xl shadow-sm transition-transform duration-300 ease-in-out group-hover:scale-105"
+                    />
+                    <FiExternalLink
+                        className="absolute top-2 right-2 text-white bg-black/60 p-1 rounded-full w-6 h-6 pointer-events-none group-hover:scale-105"
+                        title="Abrir certificado"
+                    />
+                </div>
+
                 </a>
             </div>
         </section>
