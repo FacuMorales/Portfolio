@@ -1,28 +1,42 @@
 import React from "react";
 import henry from "../assets/henry.png"
 import { FiExternalLink } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const About = () => {
     return(
         <section id="about" className="flex flex-col items-left text-center md:text-left max-w-screen-lg mx-auto py-20 px-8 2xl:max-w-screen-xl">
-            <h1 className="text-4xl text-gray-700">Sobre Mí</h1>
-            <div className="text-2xl/9 text-gray-700 mt-8">
-                <p>
-                    🎓 Soy Facundo Morales, Desarrollador Full Stack con una sólida formación en SoyHenry y estudios en Analista Programador Universitario en la Universidad Nacional de Jujuy. Mi formación técnica está respaldada por una gran curiosidad y un fuerte compromiso con el aprendizaje continuo.
-                </p>
-                <p className="mt-4">
-                    💡 Me apasiona crear soluciones tecnológicas que resuelvan problemas reales. Disfruto tanto del trabajo en equipo como del desarrollo individual, siempre enfocado en la calidad del código, la organización y la mejora constante.
-                </p>
-                <p className="mt-4">
-                    🧠 Me defino como una persona analítica, autodidacta y con alta capacidad de adaptación. Valoro la colaboración, la comunicación clara y los desafíos que requieren pensamiento crítico y dedicación.
-                </p>
-                <p className="mt-4">
-                    🚀 Más allá del código, busco crecer como profesional: alguien que pueda aportar valor desde la técnica, pero también desde la empatía, la iniciativa y la responsabilidad.
-                </p>
-            </div>
+            <motion.div
+                initial={{ opacity: 0, y: 200 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.7 }}
+            >
+                <h1 className="text-4xl text-gray-700">Sobre Mí</h1>
+                <div className="text-2xl/9 text-gray-700 mt-8">
+                    <p>
+                        🎓 Soy Facundo Morales, Desarrollador Full Stack con una sólida formación en SoyHenry y estudios en Analista Programador Universitario en la Universidad Nacional de Jujuy. Mi formación técnica está respaldada por una gran curiosidad y un fuerte compromiso con el aprendizaje continuo.
+                    </p>
+                    <p className="mt-4">
+                        💡 Me apasiona crear soluciones tecnológicas que resuelvan problemas reales. Disfruto tanto del trabajo en equipo como del desarrollo individual, siempre enfocado en la calidad del código, la organización y la mejora constante.
+                    </p>
+                    <p className="mt-4">
+                        🧠 Me defino como una persona analítica, autodidacta y con alta capacidad de adaptación. Valoro la colaboración, la comunicación clara y los desafíos que requieren pensamiento crítico y dedicación.
+                    </p>
+                    <p className="mt-4">
+                        🚀 Más allá del código, busco crecer como profesional: alguien que pueda aportar valor desde la técnica, pero también desde la empatía, la iniciativa y la responsabilidad.
+                    </p>
+                </div>
+            </motion.div>
 
 
-            <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow border border-gray-200 mt-10 flex flex-col md:flex-row justify-between items-center gap-6 group">
+            <motion.div
+                initial={{ opacity: 0, x: -300 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.4 }}
+                transition={{ duration: 0.8 }}
+                className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow border border-gray-200 mt-10 flex flex-col md:flex-row justify-between items-center gap-6 group"
+            >
             
                 <div className="flex-1">
                 <div className="flex items-start justify-between mb-2">
@@ -57,7 +71,7 @@ const About = () => {
                 </div>
 
                 </a>
-            </div>
+            </motion.div>
         </section>
     );
 };

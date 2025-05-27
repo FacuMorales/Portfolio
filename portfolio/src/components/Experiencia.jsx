@@ -1,11 +1,27 @@
 import React from "react";
 import experiencia from "../assets/experiencia"
+import { motion } from "framer-motion";
 
 const Experiencia = () => {
   return (
     <section id="experience" className="flex flex-col items-left text-center md:text-left max-w-screen-lg mx-auto py-20 px-8 2xl:max-w-screen-xl">
-      <h1 className="text-4xl text-gray-700 mb-8">Experiencia</h1>
-      <div className="space-y-6">
+      <motion.h1
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.7 }}
+        className="text-4xl text-gray-700 mb-8"
+      >
+        Experiencia
+      </motion.h1>
+
+      <motion.div
+        initial={{ opacity: 0, x: -300 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 0.8 }}
+        className="space-y-6"
+      >
         {experiencia.map((exp, index) => (
           <div
             key={index}
@@ -23,7 +39,7 @@ const Experiencia = () => {
             </p>
           </div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

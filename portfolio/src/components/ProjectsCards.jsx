@@ -5,8 +5,6 @@ const ProjectsCards = ({ imagen, nombre, descripcion, url}) => {
     return (
         <a
             href={url}
-            target="_blank"
-            rel="noopener noreferrer"
             className="group block rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-shadow bg-white"
         >
             <div className="overflow-hidden rounded-3xl">

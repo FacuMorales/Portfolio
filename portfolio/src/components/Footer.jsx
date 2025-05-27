@@ -1,9 +1,16 @@
 import React from "react";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Footer = () => {
     return (
-        <section className="flex flex-col items-left text-center md:text-left max-w-screen-lg mx-auto py-20 px-8 2xl:max-w-screen-xl">
+        <motion.section
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="flex flex-col items-left text-center md:text-left max-w-screen-lg mx-auto py-20 px-8 2xl:max-w-screen-xl"
+        >
             <hr className="border-gray-400" />
                 <div className="mt-16 mb-16">
                     <div className="text-4xl font-bold mb-12">
@@ -33,14 +40,14 @@ const Footer = () => {
                             className="relative flex items-center px-10 py-4 bg-[#1CEDAE] rounded-3xl font-bold transition hover:bg-[#1ad69d] group"
                         >
                             Contáctame
-                            <span className="ml-1 inline-block transition-transform group-hover:translate-x-2 group-hover:text-[#1ad69d] transition-colors duration-600 border rounded-full border-[#1CEDAE] group-hover:border-gray-100 group-hover:bg-gray-100">
+                            <span className="ml-1 inline-block transition-transform group-hover:translate-x-2 group-hover:text-gray-100 transition-colors duration-600">
                             ➜
                             </span>
                         </a>
                     </div>
                 </div>
             <hr className="border-gray-400" />
-        </section>
+        </motion.section>
     );
 };
 
