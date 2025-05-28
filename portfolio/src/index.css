@@ -23,4 +23,8 @@
 
 html {
   scroll-behavior: smooth;
-} 
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}

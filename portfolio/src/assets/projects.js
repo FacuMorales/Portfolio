@@ -1,5 +1,5 @@
 import grayola from "../assets/grayola.png"
-import quality from "../assets/quality.png"
+import quality from "../assets/quality/quality.png"
 import kromee from "../assets/kromee.png"
 import neoshop from "../assets/neoshop.png"
 

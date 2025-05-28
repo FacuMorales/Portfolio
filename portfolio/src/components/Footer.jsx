@@ -9,7 +9,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="flex flex-col items-left text-center md:text-left max-w-screen-lg mx-auto py-20 px-8 2xl:max-w-screen-xl"
+            className="flex flex-col items-left text-center md:text-left max-w-screen-lg mx-auto mb-20 px-8 2xl:max-w-screen-xl"
         >
             <hr className="border-gray-400" />
                 <div className="mt-16 mb-16">
