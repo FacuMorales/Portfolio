@@ -27,9 +27,9 @@ const Header = () => {
 
         {/* Enlaces - Desktop */}
         <nav className="hidden md:flex space-x-8 font-semibold">
-          <a href="#projects" className="text-gray-700 hover:text-[#1ad69d] transition">Proyectos</a>
-          <a href="#about" className="text-gray-700 hover:text-[#1ad69d] transition">Sobre mí</a>
-          <a href="#experience" className="text-gray-700 hover:text-[#1ad69d] transition">Experiencia</a>
+          <a href="/#projects" className="text-gray-700 hover:text-[#1ad69d] transition">Proyectos</a>
+          <a href="/#about" className="text-gray-700 hover:text-[#1ad69d] transition">Sobre mí</a>
+          <a href="/#experience" className="text-gray-700 hover:text-[#1ad69d] transition">Experiencia</a>
         </nav>
 
         {/* Botones - Desktop */}

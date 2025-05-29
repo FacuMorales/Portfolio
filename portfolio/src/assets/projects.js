@@ -1,7 +1,7 @@
-import grayola from "../assets/grayola.png"
+import grayola from "../assets/grayola/grayola.png"
 import quality from "../assets/quality/quality.png"
-import kromee from "../assets/kromee.png"
-import neoshop from "../assets/neoshop.png"
+import kromee from "../assets/kromee/kromee.png"
+import neoshop from "../assets/neoshop/neoshop.png"
 
 const projects = [
     {id: 1, nombre: "NeoShop", descripcion: "Marketplace de compra y venta", imagen: neoshop, web: "No disponible", url: "/neoshop"},
