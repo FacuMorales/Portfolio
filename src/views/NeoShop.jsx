@@ -39,12 +39,23 @@ const NeoShop = () => {
 
         {/* Botón */}
         <a
-            href="https://github.com/Proyecto-final-organization"
+            href="https://neoshop.techwebstudio.com.ar/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border mb-12 rounded-3xl px-10 py-4 font-bold flex items-center text-gray-700 hover:text-black hover:bg-gray-100 transition group"
             >
             Ver Proyecto
+            <span className="ml-1 inline-block transition-transform group-hover:translate-x-2 group-hover:text-[#1ad69d] transition-colors duration-600">
+                ➜
+            </span>
+        </a>
+        <a
+            href="https://github.com/Proyecto-final-organization"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border mb-12 ml-12 rounded-3xl px-10 py-4 font-bold flex items-center text-gray-700 hover:text-black hover:bg-gray-100 transition group"
+            >
+            Repositorio
             <span className="ml-1 inline-block transition-transform group-hover:translate-x-2 group-hover:text-[#1ad69d] transition-colors duration-600">
                 ➜
             </span>
