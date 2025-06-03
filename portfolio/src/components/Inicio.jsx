@@ -1,7 +1,7 @@
 import React from "react";
 import foto from "../assets/perfil.jpg";
 import technologies from "../assets/technologies";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Inicio = () => {
@@ -25,12 +25,12 @@ const Inicio = () => {
           </p>
           <div className="hidden md:flex gap-4 mt-6">
             <a
-              href="https://www.instagram.com/facu_morales14/"
+              href="https://github.com/FacuMorales"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full border hover:bg-[#1CEDAE] transition duration-600"
             >
-              <FaInstagram className="text-black text-lg" />
+              <FaGithub className="text-black text-lg" />
             </a>
             <a
               href="https://www.linkedin.com/in/facundo-samuel-morales-villagra-801656298/"
@@ -53,12 +53,12 @@ const Inicio = () => {
         </div>
         <div className="md:hidden flex gap-4 mt-6">
             <a
-              href="https://www.instagram.com/facu_morales14/"
+              href="https://github.com/FacuMorales"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full border hover:bg-[#1CEDAE] transition duration-600"
             >
-              <FaInstagram className="text-black text-lg" />
+              <FaGithub className="text-black text-lg" />
             </a>
             <a
               href="https://www.linkedin.com/in/facundo-samuel-morales-villagra-801656298/"

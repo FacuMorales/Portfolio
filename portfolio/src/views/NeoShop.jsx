@@ -33,14 +33,13 @@ const NeoShop = () => {
       >
         <h1 className="text-4xl font-semibold mb-4">NeoShop</h1>
         <p className="text-lg text-gray-700 mb-8">
-            NeoShop es una plataforma enfocada en la gestión de auditorías internas
-            para empresas, permitiendo organizar tareas, adjuntar evidencia y
-            generar reportes automáticamente.
+            NeoShop es un marketplace online, en el cual las empresas pueden lanzar su tienda personalizada
+            con sus productos y los clientes tener un fácil y seguro acceso para adquirirlos.
         </p>
 
         {/* Botón */}
         <a
-            href="https://www.makerslabacademy.com/"
+            href="https://github.com/Proyecto-final-organization"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border mb-12 rounded-3xl px-10 py-4 font-bold flex items-center text-gray-700 hover:text-black hover:bg-gray-100 transition group"
@@ -55,45 +54,104 @@ const NeoShop = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 border-t border-gray-300 pt-6 mb-16 text-sm text-gray-600">
             <div>
             <strong className="block text-black">Rol:</strong>
-            Fullstack Developer
+            Backend Developer
             </div>
             <div>
             <strong className="block text-black">Foco:</strong>
-            Auditorías internas
+            Marketplace
             </div>
             <div>
             <strong className="block text-black">Duración:</strong>
-            12 semanas
+            6 semanas
             </div>
+        </div>
+
+        {/* Tecnologías */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-semibold mb-2">Tecnologías</h2>
+          <div className="flex flex-wrap gap-3 mt-4">
+            {[
+              "Javascript",
+              "Node.js",
+              "Express",
+              "Firebase",
+              "JSON Web Token",
+              "Bcryptjs",
+              "Cookie Parser",
+              "Nodemailer",
+              "Sequelize",
+              "PostgreSQL"
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="bg-gray-100 text-gray-800 px-4 py-1.5 rounded-full text-sm font-medium shadow-sm hover:bg-[#1ad69d]/20 transition"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* Desafíos */}
         <div className="mb-16">
             <h2 className="text-2xl font-semibold mb-2">Desafíos</h2>
             <p className="text-gray-700">
-            Qué se busca resolver: que los equipos de calidad puedan gestionar sus
-            procesos de auditoría de forma más clara, organizada y trazable,
-            evitando la pérdida de información y mejorando la colaboración.
+            NeoShop es un proyecto académico realizado como entrega final para la carrera de Fullstack
+            Developer en SoyHenry, en él conformamos un equipo de 7 integrantes. Debíamos realizar un proyecto
+            desde cero con una idea propia en la cual presentar todo lo aprendido durante nuestra instancia
+            como estudiantes.
+            </p>
+            <p className="text-gray-700">
+            Nuestra idea fue implementar un marketplace en el cual cualquier persona pudiese abrir su propia
+            tienda con sus productos, éstos serían como un "cliente tienda".
+            </p>
+            <p className="text-gray-700">
+            Por otro lado tendríamos a los "clientes finales" que vendrían a ser los compradores, los mismos
+            pueden ingresar a la página, crear su cuenta y buscar sus tiendas o productos favoritos.
+            </p>
+            <p className="text-gray-700">
+            Mi principal responsabilidad fue liderar el desarrollo del backend, asegurando que toda la lógica
+            del marketplace funcionara de forma fluida y segura.
             </p>
         </div>
 
         {/* Proceso */}
         <div className="mb-16">
-            <h2 className="text-2xl font-semibold mb-4">Mi proceso</h2>
-            <ol className="list-decimal list-inside space-y-4 text-gray-700">
+          <h2 className="text-2xl font-semibold mb-4">Mi proceso</h2>
+          <ol className="list-decimal list-inside space-y-4 text-gray-700">
             <li>
-                <strong>Relevamiento funcional:</strong> entrevistas con usuarios
-                clave, levantamiento de requerimientos.
+              <strong>Diseño de base de datos relacional:</strong> modelé la estructura
+              de datos usando Sequelize con PostgreSQL. Establecí relaciones claras entre
+              usuarios, productos, categorías, órdenes, carritos y tiendas, asegurando integridad y escalabilidad.
             </li>
             <li>
-                <strong>Diseño de base de datos y endpoints:</strong> definición de
-                modelos en PostgreSQL y estructura REST con Express.
+              <strong>Desarrollo de endpoints y lógica de negocio:</strong> implementé
+              la mayoría de los endpoints REST con Express, incluyendo registro e inicio
+              de sesión, gestión de usuarios y tiendas, operaciones CRUD, sistema de favoritos
+              y reviews.
             </li>
             <li>
-                <strong>Implementación:</strong> desarrollo frontend con React y
-                Tailwind, subida de archivos, autenticación con Auth0.
+              <strong>Autenticación y autorización:</strong> integré JWT para proteger rutas,
+              junto con `bcryptjs` para el manejo de contraseñas seguras y `cookie-parser`
+              para mantener sesiones persistentes. Además, configuré autenticación de terceros
+              mediante Firebase para permitir inicio de sesión con Google, Facebook y otras plataformas.
             </li>
-            </ol>
+            <li>
+              <strong>Pasarela de pagos:</strong> desarrollé el flujo completo de checkout
+              integrando la API de PayPal, permitiendo compras seguras y redireccionamiento
+              automático según el estado del pago.
+            </li>
+            <li>
+              <strong>Gestión de correo electrónico:</strong> configuré el envío automático
+              de correos con `nodemailer` para confirmar compras, restablecer contraseñas y
+              notificar eventos clave.
+            </li>
+            <li>
+              <strong>Pruebas y documentación:</strong> realicé testing funcional de los endpoints
+              con herramientas como Postman, y documenté los flujos para facilitar el trabajo
+              del equipo frontend.
+            </li>
+          </ol>
         </div>
       </motion.div>
 

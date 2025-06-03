@@ -28,9 +28,9 @@ const Kromee = () => {
       >
         <h1 className="text-4xl font-semibold mb-4">Maker's Lab Academy</h1>
         <p className="text-lg text-gray-700 mb-8">
-            Maker's Lab Academy es una plataforma enfocada en la gestión de auditorías internas
-            para empresas, permitiendo organizar tareas, adjuntar evidencia y
-            generar reportes automáticamente.
+            Maker's Lab Academy es una plataforma educativa enfocada a cursos innovadores, especializados en
+            robótica y tecnología para preparar a la próxima generación ofreciendo clases para
+            todos los niveles, desde principiantes hasta expertos.
         </p>
 
         {/* Botón */}
@@ -50,11 +50,11 @@ const Kromee = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 border-t border-gray-300 pt-6 mb-16 text-sm text-gray-600">
             <div>
             <strong className="block text-black">Rol:</strong>
-            Fullstack Developer
+            Frontend Developer
             </div>
             <div>
             <strong className="block text-black">Foco:</strong>
-            Auditorías internas
+            Academia de robótica y programación
             </div>
             <div>
             <strong className="block text-black">Duración:</strong>
@@ -62,13 +62,35 @@ const Kromee = () => {
             </div>
         </div>
 
+        {/* Tecnologías */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-semibold mb-2">Tecnologías</h2>
+          <div className="flex flex-wrap gap-3 mt-4">
+            {[
+              "Javascript",
+              "React",
+              "Vite.js",
+              "Tawilwind CSS",
+              "Framer Motion"
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="bg-gray-100 text-gray-800 px-4 py-1.5 rounded-full text-sm font-medium shadow-sm hover:bg-[#1ad69d]/20 transition"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+
         {/* Desafíos */}
         <div className="mb-16">
             <h2 className="text-2xl font-semibold mb-2">Desafíos</h2>
             <p className="text-gray-700">
-            Qué se busca resolver: que los equipos de calidad puedan gestionar sus
-            procesos de auditoría de forma más clara, organizada y trazable,
-            evitando la pérdida de información y mejorando la colaboración.
+            Qué se busca resolver: uno de los principales retos era comunicar de forma clara el valor
+            de la propuesta educativa, especialmente para quienes están dando sus primeros pasos en el
+            mundo de la tecnología. La web debía transmitir confianza, dinamismo y claridad para
+            facilitar la conversión de visitantes en estudiantes.
             </p>
         </div>
 
@@ -77,16 +99,16 @@ const Kromee = () => {
             <h2 className="text-2xl font-semibold mb-4">Mi proceso</h2>
             <ol className="list-decimal list-inside space-y-4 text-gray-700">
             <li>
-                <strong>Relevamiento funcional:</strong> entrevistas con usuarios
-                clave, levantamiento de requerimientos.
+                <strong>Diseño orientado al usuario:</strong> Interfaz limpia y moderna usando Tailwind CSS,
+                con formularios accesibles y navegación clara.
             </li>
             <li>
-                <strong>Diseño de base de datos y endpoints:</strong> definición de
-                modelos en PostgreSQL y estructura REST con Express.
+                <strong>Animaciones y dinamismo:</strong> Transiciones suaves de entrada, aparación y carga de
+                objetos utilizando Framer Motion para dar una sensación profesional y fluída.
             </li>
             <li>
-                <strong>Implementación:</strong> desarrollo frontend con React y
-                Tailwind, subida de archivos, autenticación con Auth0.
+                <strong>Adaptabilidad:</strong> Me aseguré de que la web funcionara perfectamente en
+                dispositivos móviles, tablets y desktop, lo cual era esencial considerando el público objetivo.
             </li>
             </ol>
         </div>

@@ -29,9 +29,9 @@ const Quality = () => {
       >
         <h1 className="text-4xl font-semibold mb-4">Quality</h1>
         <p className="text-lg text-gray-700 mb-8">
-            Quality es una plataforma enfocada en la gestión de auditorías internas
-            para empresas, permitiendo organizar tareas, adjuntar evidencia y
-            generar reportes automáticamente.
+            Quality es un software integral de facturación electrónica, pensado para ayudar a empresas
+            a controlar su contabilidad de forma ordenada y eficiente. Desde una sola interfaz,
+            permite emitir y recibir facturas, gestionar proveedores, contratos, pagos e ítems con total seguridad.
         </p>
 
         {/* Botón */}
@@ -55,7 +55,7 @@ const Quality = () => {
             </div>
             <div>
             <strong className="block text-black">Foco:</strong>
-            Auditorías internas
+            Facturación electrónica
             </div>
             <div>
             <strong className="block text-black">Duración:</strong>
@@ -63,13 +63,40 @@ const Quality = () => {
             </div>
         </div>
 
+        {/* Tecnologías */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-semibold mb-2">Tecnologías</h2>
+          <div className="flex flex-wrap gap-3 mt-4">
+            {[
+              "Typescript",
+              "React",
+              "Next.js",
+              "Tawilwind CSS",
+              "Zustand",
+              "Axios",
+              "Node.js",
+              "Express",
+              "Sequelize",
+              "JSON Web Token",
+              "MySQL"
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="bg-gray-100 text-gray-800 px-4 py-1.5 rounded-full text-sm font-medium shadow-sm hover:bg-[#1ad69d]/20 transition"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+
         {/* Desafíos */}
         <div className="mb-16">
             <h2 className="text-2xl font-semibold mb-2">Desafíos</h2>
             <p className="text-gray-700">
-            Qué se busca resolver: que los equipos de calidad puedan gestionar sus
-            procesos de auditoría de forma más clara, organizada y trazable,
-            evitando la pérdida de información y mejorando la colaboración.
+            Qué se busca resolver: muchas empresas pierden tiempo valioso en tareas contables dispersas:
+            hojas de cálculo, mails con facturas, proveedores desorganizados. Quality busca unificar todos
+            estos procesos en una sola herramienta, reduciendo errores y aumentando la trazabilidad contable.
             </p>
         </div>
 
@@ -78,16 +105,22 @@ const Quality = () => {
             <h2 className="text-2xl font-semibold mb-4">Mi proceso</h2>
             <ol className="list-decimal list-inside space-y-4 text-gray-700">
             <li>
-                <strong>Relevamiento funcional:</strong> entrevistas con usuarios
-                clave, levantamiento de requerimientos.
+                <strong>Generador de facturas:</strong> Me enfoqué en mejorar el flujo de carga de facturas
+                de compras y ventas, implementando selectores y validaciones en el formulario principal.
             </li>
             <li>
-                <strong>Diseño de base de datos y endpoints:</strong> definición de
-                modelos en PostgreSQL y estructura REST con Express.
+                <strong>Visualización y gestión de facturas:</strong> Listado organizado de facturas con
+                ordenamiento, filtrado y paginado. Botones de acción para ver pdfs, eliminar, etc.
             </li>
             <li>
-                <strong>Implementación:</strong> desarrollo frontend con React y
-                Tailwind, subida de archivos, autenticación con Auth0.
+                <strong>Optimización de ítems y categorías:</strong> Implementé una vista visual en
+                formato card para los ítems, organizándolos por categorías. Esto facilitó la navegación
+                y mejoró la experiencia al momento de registrar nuevos ítems.
+            </li>
+            <li>
+                <strong>Gestión de proveedores:</strong> Construí la vista de proveedores, incluyendo
+                el listado general y el formulario para registrar nuevos. Incorporé validaciones y una
+                interfaz coherente con el resto del sistema.
             </li>
             </ol>
         </div>

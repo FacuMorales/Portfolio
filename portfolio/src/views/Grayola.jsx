@@ -30,14 +30,13 @@ const Grayola = () => {
       >
         <h1 className="text-4xl font-semibold mb-4">Grayola</h1>
         <p className="text-lg text-gray-700 mb-8">
-            Grayola es una plataforma enfocada en la gestión de auditorías internas
-            para empresas, permitiendo organizar tareas, adjuntar evidencia y
-            generar reportes automáticamente.
+            Grayola es una plataforma enfocada en la gestión de proyectos de diseño. Escalá y delegá
+            tus operaciones de forma rápida, segura y sencilla.
         </p>
 
         {/* Botón */}
         <a
-            href="https://www.makerslabacademy.com/"
+            href="https://grayola-prueba.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border mb-12 rounded-3xl px-10 py-4 font-bold flex items-center text-gray-700 hover:text-black hover:bg-gray-100 transition group"
@@ -56,12 +55,33 @@ const Grayola = () => {
             </div>
             <div>
             <strong className="block text-black">Foco:</strong>
-            Auditorías internas
+            Gestor de proyectos
             </div>
             <div>
             <strong className="block text-black">Duración:</strong>
-            12 semanas
+            4 semanas
             </div>
+        </div>
+
+        {/* Tecnologías */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-semibold mb-2">Tecnologías</h2>
+          <div className="flex flex-wrap gap-3 mt-4">
+            {[
+              "Javascript",
+              "React",
+              "Next.js",
+              "Tawilwind CSS",
+              "Supabase",
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="bg-gray-100 text-gray-800 px-4 py-1.5 rounded-full text-sm font-medium shadow-sm hover:bg-[#1ad69d]/20 transition"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* Desafíos */}
@@ -69,8 +89,9 @@ const Grayola = () => {
             <h2 className="text-2xl font-semibold mb-2">Desafíos</h2>
             <p className="text-gray-700">
             Qué se busca resolver: que los equipos de calidad puedan gestionar sus
-            procesos de auditoría de forma más clara, organizada y trazable,
-            evitando la pérdida de información y mejorando la colaboración.
+            proyectos de diseño de forma más clara y trazable,
+            permitiendo a diferentes tipos de usuarios (Clientes, Project Managers y Diseñadores)
+            tener sus ideas organizadas.
             </p>
         </div>
 
@@ -79,16 +100,23 @@ const Grayola = () => {
             <h2 className="text-2xl font-semibold mb-4">Mi proceso</h2>
             <ol className="list-decimal list-inside space-y-4 text-gray-700">
             <li>
-                <strong>Relevamiento funcional:</strong> entrevistas con usuarios
-                clave, levantamiento de requerimientos.
+                <strong>Autenticación y Autorización:</strong> Implementé autenticación con
+                Supabase. Definir y restringir el acceso según roles:
+                <ul className="ml-8"> <u>Cliente:</u> puede crear proyectos.</ul>
+                <ul className="ml-8"> <u>Project Manager:</u> puede ver todos los proyectos, asignarlos a diseñadores, editarlos y eliminarlos.</ul>
+                <ul className="ml-8"> <u>Diseñador:</u> puede ver los proyectos asignados, pero no puede editarlos ni eliminarlos.</ul>
             </li>
             <li>
-                <strong>Diseño de base de datos y endpoints:</strong> definición de
-                modelos en PostgreSQL y estructura REST con Express.
+                <strong>Gestión de Proyectos (CRUD):</strong> Crear un proyecto con: título,
+                descripción, subida de uno o más archivos, editar y eliminar proyectos existentes.
             </li>
             <li>
-                <strong>Implementación:</strong> desarrollo frontend con React y
-                Tailwind, subida de archivos, autenticación con Auth0.
+                <strong>Seguridad y Validación:</strong> Validaciones de formulario (campos requeridos, datos válidos, etc),
+                protección de rutas y funciones según el rol del usuario.
+            </li>
+            <li>
+                <strong>Interfaz de Usuario:</strong> UI limpia y moderna usando Tailwind CSS, formularios
+                claros y fáciles de usar para login/register y crear, editar y visualizar proyectos.
             </li>
             </ol>
         </div>

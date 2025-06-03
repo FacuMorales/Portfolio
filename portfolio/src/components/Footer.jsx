@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -19,12 +19,12 @@ const Footer = () => {
                     <div className="flex justify-between">
                         <div className="flex gap-4">
                             <a
-                                href="https://www.instagram.com/facu_morales14/"
+                                href="https://github.com/FacuMorales"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 flex items-center justify-center rounded-full border hover:bg-[#1CEDAE] transition duration-600"
                             >
-                                <FaInstagram className="text-black text-lg" />
+                                <FaGithub className="text-black text-lg" />
                             </a>
                             <a
                                 href="https://www.linkedin.com/in/facundo-samuel-morales-villagra-801656298/"
