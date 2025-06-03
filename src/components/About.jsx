@@ -53,7 +53,7 @@ const About = () => {
                 </div>
 
                 <a
-                href="public\SoyHenry.pdf"
+                href="SoyHenry.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-shrink-0"

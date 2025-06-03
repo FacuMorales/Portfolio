@@ -35,7 +35,7 @@ const Header = () => {
         {/* Botones - Desktop */}
         <div className="hidden md:flex space-x-4 items-center">
           <a
-            href="public\CV.pdf"
+            href="CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="relative border rounded-3xl px-10 py-4 font-bold flex items-center text-gray-700 hover:text-black hover:bg-gray-100 transition group"
