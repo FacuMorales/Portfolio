@@ -9,12 +9,14 @@ import express from "./tecnologias/express.svg"
 import sequelize from "./tecnologias/sequelize.svg"
 import tailwind from "./tecnologias/tailwind.svg"
 import vite from "./tecnologias/vite.svg"
+import next from "./tecnologias/next.svg"
 
 const technologies = [
     javascript,
     typescript,
     nodejs,
     react,
+    next,
     vite,
     mongodb,
     postgresql,
