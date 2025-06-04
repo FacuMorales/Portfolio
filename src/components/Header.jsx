@@ -71,7 +71,7 @@ const Header = () => {
           <a href="/#about" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-[#1ad69d]">Sobre mí</a>
           <a href="/#experience" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-[#1ad69d]">Experiencia</a>
           <a
-            href="public/CV.pdf"
+            href="CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
