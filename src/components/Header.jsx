@@ -67,9 +67,9 @@ const Header = () => {
       {/* Menú Mobile */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 px-6 space-y-4">
-          <a href="#projects" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-[#1ad69d]">Proyectos</a>
-          <a href="#about" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-[#1ad69d]">Sobre mí</a>
-          <a href="#experience" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-[#1ad69d]">Experiencia</a>
+          <a href="/#projects" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-[#1ad69d]">Proyectos</a>
+          <a href="/#about" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-[#1ad69d]">Sobre mí</a>
+          <a href="/#experience" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-[#1ad69d]">Experiencia</a>
           <a
             href="public/CV.pdf"
             target="_blank"
