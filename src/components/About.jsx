@@ -4,12 +4,14 @@ import { FiExternalLink } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const About = () => {
+    const isMobile = window.innerWidth < 768;
+
     return(
         <section id="about" className="flex flex-col items-left text-center md:text-left max-w-screen-lg mx-auto py-20 px-8 2xl:max-w-screen-xl">
             <motion.div
                 initial={{ opacity: 0, y: 200 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: isMobile ? 0 : 0.3 }}
                 transition={{ duration: 0.7 }}
             >
                 <h1 className="text-4xl text-gray-700">Sobre Mí</h1>
@@ -33,7 +35,7 @@ const About = () => {
             <motion.div
                 initial={{ opacity: 0, x: -300 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.4 }}
+                viewport={{ once: true, amount: isMobile ? 0 : 0.4 }}
                 transition={{ duration: 0.8 }}
                 className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow border border-gray-200 mt-10 flex flex-col md:flex-row justify-between items-center gap-6 group"
             >

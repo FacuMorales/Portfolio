@@ -19,7 +19,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 Modal.setAppElement("#root");
 
 const NeoShop = () => {
-
+  const isMobile = window.innerWidth < 768;
   const [isOpen, setIsOpen] = useState(false);
   const images = [neoshopMockup1, neoshopMockup2, neoshopMockup3, neoshopMockup4, neoshopMockup5, neoshopMockup6, neoshopMockup7, neoshopMockup8, neoshopMockup9];
 
@@ -38,28 +38,32 @@ const NeoShop = () => {
         </p>
 
         {/* Botón */}
-        <a
-            href="https://neoshop.techwebstudio.com.ar/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block border mb-12 rounded-3xl px-10 py-4 font-bold flex items-center text-gray-700 hover:text-black hover:bg-gray-100 transition group"
-            >
-            Ver Proyecto
-            <span className="ml-1 inline-block transition-transform group-hover:translate-x-2 group-hover:text-[#1ad69d] transition-colors duration-600">
-                ➜
-            </span>
-        </a>
-        <a
-            href="https://github.com/Proyecto-final-organization"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block border mb-12 ml-12 rounded-3xl px-10 py-4 font-bold flex items-center text-gray-700 hover:text-black hover:bg-gray-100 transition group"
-            >
-            Repositorio
-            <span className="ml-1 inline-block transition-transform group-hover:translate-x-2 group-hover:text-[#1ad69d] transition-colors duration-600">
-                ➜
-            </span>
-        </a>
+        <div className="flex">
+          <a
+              href="https://neoshop.techwebstudio.com.ar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border mb-12 rounded-3xl px-10 py-4 font-bold flex items-center text-gray-700 hover:text-black hover:bg-gray-100 transition group"
+              >
+              Ver Proyecto
+              <span className="ml-1 inline-block transition-transform group-hover:translate-x-2 group-hover:text-[#1ad69d] transition-colors duration-600">
+                  ➜
+              </span>
+          </a>
+          <div className="hidden md:block">
+            <a
+                href="https://github.com/Proyecto-final-organization"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border mb-12 ml-12 rounded-3xl px-10 py-4 font-bold flex items-center text-gray-700 hover:text-black hover:bg-gray-100 transition group"
+                >
+                Repositorio
+                <span className="ml-1 inline-block transition-transform group-hover:translate-x-2 group-hover:text-[#1ad69d] transition-colors duration-600">
+                    ➜
+                </span>
+            </a>
+          </div>
+        </div>
 
         {/* Ficha técnica */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 border-t border-gray-300 pt-6 mb-16 text-sm text-gray-600">
@@ -171,7 +175,7 @@ const NeoShop = () => {
         className="flex justify-center"
         initial={{ opacity: 0, x: -300 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: isMobile ? 0 : 0.4 }}
         transition={{ duration: 0.8 }}
       >
         <div className="relative w-[500px]">

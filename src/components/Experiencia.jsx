@@ -3,6 +3,8 @@ import experiencia from "../assets/experiencia"
 import { motion } from "framer-motion";
 
 const Experiencia = () => {
+  const isMobile = window.innerWidth < 768;
+
   return (
     <section id="experience" className="flex flex-col items-left text-center md:text-left max-w-screen-lg mx-auto mt-20 mb-40 px-8 2xl:max-w-screen-xl">
       <motion.h1
@@ -18,7 +20,7 @@ const Experiencia = () => {
       <motion.div
         initial={{ opacity: 0, x: -300 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: isMobile ? 0 : 0.4 }}
         transition={{ duration: 0.8 }}
         className="space-y-6"
       >

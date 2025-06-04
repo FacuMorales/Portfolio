@@ -14,7 +14,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 Modal.setAppElement("#root");
 
 const Kromee = () => {
-
+  const isMobile = window.innerWidth < 768;
   const [isOpen, setIsOpen] = useState(false);
   const images = [kromeeMockup1, kromeeMockup2, kromeeMockup3, kromeeMockup4];
 
@@ -119,7 +119,7 @@ const Kromee = () => {
         className="flex justify-center"
         initial={{ opacity: 0, x: -300 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: isMobile ? 0 : 0.4 }}
         transition={{ duration: 0.8 }}
       >
         <div className="relative w-[500px]">
