@@ -86,7 +86,7 @@ const Grayola = () => {
               "Javascript",
               "React",
               "Next.js",
-              "Tawilwind CSS",
+              "Tailwind CSS",
               "Supabase",
             ].map((tech) => (
               <span

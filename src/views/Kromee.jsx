@@ -70,7 +70,7 @@ const Kromee = () => {
               "Javascript",
               "React",
               "Vite.js",
-              "Tawilwind CSS",
+              "Tailwind CSS",
               "Framer Motion"
             ].map((tech) => (
               <span

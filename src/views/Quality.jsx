@@ -71,7 +71,7 @@ const Quality = () => {
               "Typescript",
               "React",
               "Next.js",
-              "Tawilwind CSS",
+              "Tailwind CSS",
               "Zustand",
               "Axios",
               "Node.js",
