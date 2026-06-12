@@ -10,6 +10,8 @@ import sequelize from "./tecnologias/sequelize.svg"
 import tailwind from "./tecnologias/tailwind.svg"
 import vite from "./tecnologias/vite.svg"
 import next from "./tecnologias/next.svg"
+import mysql from "./tecnologias/mysql.svg"
+import prisma from "./tecnologias/prisma.svg"
 
 const technologies = [
     javascript,
@@ -20,6 +22,8 @@ const technologies = [
     vite,
     mongodb,
     postgresql,
+    mysql,
+    prisma,
     sequelize,
     redux,
     express,
