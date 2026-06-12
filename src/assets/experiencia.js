@@ -1,10 +1,17 @@
 const experiencia = [
   {
     cargo: "Desarrollador Full Stack",
+    empresa: "Atom",
+    fecha: "Septiembre 2025 - Actualidad",
+    descripcion: "Trabajo en el desarrollo de Nexus, un CRM/POS orientado a la gestión comercial, ventas, stock, clientes, catálogos públicos e integraciones. Participo tanto en el Front End como en el Back End, construyendo interfaces operativas, flujos de negocio, APIs, módulos de reportes e integraciones con servicios externos como pasarelas de pago, Mercado Libre, Tienda Nube, WhatsApp y notificaciones en tiempo real.",
+    skills: "TypeScript - React.js - TailwindCSS - Zustand - NestJS - Prisma - MySQL - WebSockets - Socket.IO - Firebase - Mercado Pago - Mercado Libre - Tienda Nube - WhatsApp",
+  },
+  {
+    cargo: "Desarrollador Full Stack",
     empresa: "Kromee",
     fecha: "Septiembre 2024 - Febrero 2025",
     descripcion: "Colaboré en el desarrollo del Front End de Maker's Lab Academy utilizando React.js y TailwindCSS, enfocándome en interfaces responsivas y experiencia de usuario. También contribuí al desarrollo del Back End de un proyecto interno de la empresa, trabajando con Node.js y MongoDB para construir APIs eficientes y escalables.",
-    skills: "Stack MERN - JavaScript - MongoDB - Moongose - Node.js - React.js - Express",
+    skills: "Stack MERN - JavaScript - MongoDB - Mongoose - Node.js - React.js - Express",
   },
   {
     cargo: "Desarrollador Full Stack",

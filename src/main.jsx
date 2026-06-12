@@ -7,6 +7,7 @@ import Quality from './views/Quality.jsx'
 import Kromee from './views/Kromee.jsx'
 import NeoShop from './views/NeoShop.jsx'
 import Grayola from './views/Grayola.jsx'
+import Nexus from './views/Nexus.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/kromee' element={<Kromee/>}/>
         <Route path='/neoshop' element={<NeoShop/>}/>
         <Route path='/grayola' element={<Grayola/>}/>
+        <Route path='/nexus' element={<Nexus/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
